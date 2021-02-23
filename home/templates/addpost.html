@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Add{% endblock title %}
+{% block content %}
+<div class="container my-5">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container font-italic">
+    <h1 class="text-center">Add Post</h1>
+    <p class="text-capitalize text-center">Welcome {{request.user}} to Dashboard page</p>
+    <form action="" method="post" enctype="multipart/form-data" class="p-5"  novalidate>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="btn btn-outline-success rounded-0 font-italic" type="submit" value="Add" />
+        <a class="btn btn-outline-danger rounded-0 font-italic" href="/dashboard" >Cancel</a>
+    </form>
+  </div>
+</div>
+{% endblock content%}

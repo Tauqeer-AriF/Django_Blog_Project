@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+.form-control{
+    border-radius: unset !important;
+}
+.bottom-icon{
+    font-size: 30px;
+}
+#about{
+    box-shadow: 0 0 10px #fff;
+}
+#blog, #blog-inner{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius:50px;
+    border-top-right-radius: 50px;
+    transition: 1s;
+}
+#blog:hover,
+#blog:hover #blog-inner{
+    border-radius: 0;
+}

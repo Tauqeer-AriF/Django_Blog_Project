@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block content %}
+<div class="container my-5">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container text-center font-italic">
+    <h1>ABOUT</h1>
+    <p class="text-capitalize">Welcome {{request.user}} to About page</p>
+  </div>
+</div>
+<div class="col-sm-12 p-5 mb-4 border" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 bg-light p-4 font-italic">
+        <h2 class="mb-4">Who We Are</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ante fermentum, consequat leo id, hendrerit augue. Vivamus nec eleifend lorem. Nunc viverra ligula ut justo dictum porttitor. Donec finibus eros hendrerit, convallis nulla vitae, tincidunt magna. Pellentesque commodo auctor arcu sit amet pharetra. Aenean ipsum nunc, semper non ultricies nec, luctus eu mauris. Proin molestie ante sit amet lacinia tempor. Sed et massa nibh.
+
+            Quisque nec sollicitudin tellus. Ut pulvinar rutrum scelerisque. Aliquam sed luctus turpis. Proin vel odio erat. Ut a sollicitudin justo. Etiam id lacinia dolor. Aenean est est, condimentum quis eros vel, blandit aliquam quam. Cras sollicitudin leo enim, eget fermentum purus imperdiet non. Morbi at velit et felis porta auctor. Mauris sodales, erat rhoncus malesuada sagittis, orci arcu gravida urna, quis faucibus eros urna vel odio. Nam sit amet magna tortor. Sed laoreet enim quis arcu condimentum, eget gravida nisl pharetra.
+
+            Morbi leo odio, posuere eget ultricies et, fermentum eget est. Ut volutpat mollis urna a ullamcorper. Proin est diam, dapibus congue dapibus in, hendrerit et diam. Integer imperdiet et metus eu facilisis. In hac habitasse platea dictumst. Aliquam erat volutpat. Cras eleifend lorem purus.
+
+            Suspendisse at gravida ex, vel maximus orci. Suspendisse lobortis pharetra lacinia. Sed vel facilisis erat. Nam sit amet egestas felis, eget efficitur dolor. Donec scelerisque eu nisi vel tincidunt. Nullam gravida urna mauris, nec dictum nibh aliquam nec. Pellentesque vel vehicula nibh. Nunc lobortis lacinia diam ac dictum. Pellentesque tincidunt dapibus faucibus. Fusce at cursus eros, sed faucibus felis. Integer lacinia nisi quam, auctor rutrum felis lacinia in. Morbi finibus dapibus efficitur. Duis felis ligula, dapibus semper volutpat id, pellentesque eu augue.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

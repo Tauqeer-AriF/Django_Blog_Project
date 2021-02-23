@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block content %}
+<div class="col-sm-12 my-5">
+    <div class="jumbotron container">
+    <div class="container text-center font-italic">
+      <h1>CONTACT</h1>
+      <p class="text-capitalize">Welcome {{request.user}} to Contact page</p>
+    </div>
+    <form class="form-horizontal w-75 m-auto py-5" method="post" action="/contact">
+                {% csrf_token %}
+                    <fieldset>
+                        <div class="form-group">                        
+                                <input id="fname" name="fname" type="text" placeholder="First Name" class="rounded-0 form-control font-italic">
+                            </div>                       
+                        <div class="form-group">                            
+                                <input id="lname" name="lname" type="text" placeholder="Last Name" class="rounded-0 form-control font-italic">
+                            </div>               
+                        <div class="form-group">                          
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="rounded-0 form-control font-italic">
+                            </div>                     
+                        <div class="form-group">                           
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="rounded-0 form-control font-italic">
+                            </div>                       
+                        <div class="form-group">                           
+                                <textarea class="form-control rounded-0" id="message" style=" font-style:italic" name="message" placeholder="Enter your massage for us here." rows="7"></textarea>
+                            </div>                      
+                        <div class="form-group">                           
+                               <button type="submit" class="btn btn-block rounded-0 font-italic btn-outline-primary">Submit</button>                           
+                        </div>
+                    </fieldset>
+                </form>
+  </div>
+</div>
+{% endblock content %}

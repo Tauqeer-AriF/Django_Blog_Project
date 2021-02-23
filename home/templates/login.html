@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock title %}
+{% block content %}
+<div class="container jumbotron font-italic p-5 my-5">
+  <h2 class="text-center">Login</h2>
+  <form action="" method="post" class="py-5 m-auto w-75" novalidate>
+  {% csrf_token %}
+    {% for fm in form %}
+    <div class="form-group">
+      {{fm.label_tag}} {{fm}} <small class="text-warning">{{fm.errors | striptags}}</small>
+      </div>
+    {% endfor %}
+    <input type="submit" value="Login" class="btn btn-outline-primary btn-block font-italic rounded-0"/>
+    {% if form.none_field_errors %}
+      {% for error in form.none_field_errorss %}
+        <p class="alert alert-danger">{{error}}</p>
+      {% endfor %}
+    {% endif %}
+  </form>
+</div>
+
+{% endblock content %}
